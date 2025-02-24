@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>OMAPS by - AI Robotics Club</title>
+    
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Explore the indoor map of Shri Lal Bahadur Shastri Government Medical College & Hospital, designed by the AI Robotics Club for easy navigation for new visitors and patients.">
+    <meta name="keywords" content="Shri Lal Bahadur Shastri Government Medical College, SLBSGMC, SLBSGMC Hospital Map, Medical College Map, Indoor Navigation, AI Robotics Club">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="OMAPS by - AI Robotics Club">
+    <meta property="og:description" content="Explore the indoor map of Shri Lal Bahadur Shastri Government Medical College & Hospital. Designed for easy navigation for visitors and patients.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Stylesheets -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style1.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Floating Navbar (Desktop View) -->
+<nav class="floating-navbar">
+    <div class="navbar-header">
+        <div class="logo">
+            <h1>O-MAP</h1>
+            <h6>by AI ROBOTICS CLUB</h6>
+        </div>
+    </div>
+    <a href="#" class="btn help-btn" onclick="showHelp()"><i class="fa-regular fa-circle-question"></i></a>
+</nav>
+
+    <!-- 📌 Floating Menu Button (Appears only on Mobile) -->
+    <div class="menu-button" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- 📌 Dropdown Menu (Toggles when button is clicked) -->
+    <div class="menu-dropdown">
+        <ul>
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#aboutus"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="#feedback"><i class="fas fa-comment"></i> Feedback</a></li>
+            <li><a href="https://airc.spumca.in"><i class="fas fa-external-link-alt"></i> Explore</a></li>
+        </ul>
+    </div>
+
+    <!-- 📌 Mobile Bottom Navbar -->
+    <div class="mobile-navbar">
+        <a href="#home" class="nav-item active"><i class="fas fa-home"></i></a>
+        <a href="#aboutus" class="nav-item"><i class="fas fa-info-circle"></i></a>
+        <a href="#feedback" class="nav-item"><i class="fas fa-comment"></i></a>
+        <a href="https://airc.spumca.in" class="nav-item"><i class="fas fa-external-link-alt"></i></a>
+    </div>
+
+    <button class="share-button-overlay" onclick="copyUrlToClipboard()"></button>
+    <!-- Custom Logo Overlay -->
+    <div class="view-btn-360">360°</div>
+    <div class="custom-logo">O-MAP</div>
+    <!-- Overlay to hide the text -->
+    <div class="text-overlay">© O-Maps</div>
+
+    <!-- 📌 Fullscreen Iframe Background -->
+    <div class="iframe-container">
+        <iframe id="mapIframe"
+            src="https://slbsgmch.unihubconnect.com/lib/owlcarousel/assets/api"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <!-- 📌 JavaScript to Toggle Menu -->
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector(".menu-dropdown");
+            menu.classList.toggle("active");
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/20ff7b4db3.js" crossorigin="anonymous"></script>
+
+    <script src="js/test.js"></script>
+
+</body>
+</html>
